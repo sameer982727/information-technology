@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            color:rgb(131, 152, 184);
+        }
+        #h{
+            color:darkblue;
+            font-size:xx-large;
+        }
+        #b{
+            color:gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="h">PET FORM</h2>
+    <form action="backend.php" id="form">
+       <label for="pet name ">PET NAME:</label><br>
+           <input type="text" name="pet name" id="pet name">
+        <br>
+        <label for="pet age">PET AGE:</label><br>
+           <input type="number" name="pet age" id="pet age">
+        <br>
+        <label for="pet weight">PET WEIGHT:</label><br>
+           <input type="number" name="pet weight" id="pet weight">
+        <br>
+        <label for="pet type">PET TYPE:</label><br>
+        <select name="dropdown">
+            <option value="DOGS" selected>DOGS</option>
+            <option value="CATS">CATS</option>
+            <option value="BIRDS">BIRDS</option>
+            <option value="OTHER">OTHER</option>
+        </select>
+        <br>
+        <label for="likes">WHAT YOUR PET LIKE?</label><br>
+            <textarea name="likes" id="" cols="30" rows="10"></textarea>
+        <br>
+        <button id="b">SUBMIT</button>
+        <button type="reset" id="b">RESET</button>
+    </form>
+</body>
+</html>
