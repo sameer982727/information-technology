@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:cadetblue;
+        }
+        #red{
+            color: red;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+            
+        }
+        #yellow{
+            color: yellow;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+        #blue{
+            color: blue;
+            text-align: center;
+            padding: 5px;
+            font-size: 12px;
+        }
+        #n10{
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #n20{
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #n30{
+            font-size: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        #aer{
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        #ver{
+            text-align: center;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+        #geo{
+            text-align: center;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+        }
+        #par{
+            font-family: cursive;
+            text-align:left;
+            color:dodgerblue;
+        }
+        #id{
+            text-align: center;
+            color:crimson;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color:dimgray;
+            padding: 5px;
+        }
+        .grid-item {
+  background-color:lightblue;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1 id="id">PARAGRAPH AND BUTTON</h1>
+    <p id="ese">Sports and games are very important for the physical and mental development of a person. They have several positive effects like, increased blood flow, improved concentration and thinking ability, among others. There is a difference between sports and games. Sports can only be played outdoors while games can be played indoors also.
+    Football, basketball, cricket, etc. are forms of sports while ludo, chess, billiards, table hockey, etc. are categorized as games. Sports and games develop a team spirit in a person. He/She becomes more communicative and expressive with a confident and impressive personality. Indulging in any sports and game changes the overall personality of a person.</p>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item"><button id="red" type="button">Red</button></div>
+        <div class="grid-item"><button id="yellow" type="button">Yellow</button></div>
+        <div class="grid-item"><button id="blue" type="button">Blue</button></div>
+        <div class="grid-item"><button type="button">10</button></div>
+        <div class="grid-item"><button type="button">20</button></div>
+        <div class="grid-item"><button type="button">30</button></div>
+        <div class="grid-item"><button id= "calibri" type="button">Calibri</button></div>
+        <div class="grid-item"><button id= "time" type="button">Times New Roman</button></div>
+        <div class="grid-item"><button id="arial" type="button">Arial</button></div>
+      </div>
+    <script>
+        document.getElementById("red").addEventListener("click", REDbutton);
+        
+        function REDbutton() {
+          document.getElementById("ese").style.color="red";}
+          
+        document.getElementById("yellow").addEventListener("click", YELLOWbutton);
+        
+        function YELLOWbutton() {
+          document.getElementById("ese").style.color="yellow";}
+    
+        document.getElementById("blue").addEventListener("click", BLUEbutton);
+        
+        function BLUEbutton() {
+          document.getElementById("ese").style.color="blue";
+        }
+    
+        document.getElementById("calibri").addEventListener("click", CALIBRIbutton);
+        
+        function CALIBRIbutton() {
+          document.getElementById("ese").style.font="italic bold 20px calibri,serif";}
+        
+        document.getElementById("time").addEventListener("click", TIMEbutton);
+        
+        function TIMEbutton() {
+          document.getElementById("ese").style.font="italic bold 20px times new roman,serif";}
+          
+        document.getElementById("arial").addEventListener("click", ARIALbutton);
+        
+        function ARIALbutton() {
+          document.getElementById("ese").style.font="italic bold 20px arial,serif";}
+      </script>
+</body>
+</html>
