@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button 
+        {
+            background-color: gray;
+            color: black;
+            padding: 6px 6px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        p 
+        {
+            color: brown;
+        }
+    </style>
+    <script>
+        function Num() {
+            var number;
+            var result = "";
+            number=Number(document.getElementById("number").value);
+            for (var i=1;i<=11;i++) 
+            {
+                result=result+"<p>"+number+"*"+i+"="+number*i+"</p>";
+            }
+            document.getElementById("result").innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    Enter the number:<input id="number" />
+    <button onclick="Num()">Print Multiplication table</button>
+    <div id="result">
+</body>
+</html>
